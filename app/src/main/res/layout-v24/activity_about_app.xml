@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutApp"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/aboutapp">
+
+    <TextView
+        android:layout_above="@id/app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/app_name"
+        android:textSize="30sp"
+        android:textColor="#6F000000"
+        android:text="Techvaganza"/>
+
+    <TextView
+        android:layout_above="@id/about_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_version"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Updated Version"/>
+
+    <ImageView
+        android:id="@+id/about_app"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/techvaganza"/>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/about_app"
+        android:id="@+id/linear_layout"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/copy_right"
+            android:src="@drawable/copyx"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_name"
+        android:textSize="17sp"
+        android:text="2019 | Techvaganza'19"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@id/linear_layout"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/all_rights"
+        android:layout_centerHorizontal="true"
+        android:text="All rights reserved"/>
+
+    <TextView
+        android:layout_below="@id/all_rights"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/developer"
+        android:layout_gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:text="Developer : Shubham Maurya"/>
+
+    <LinearLayout
+       android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/git_id"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingRight="20dp"
+            android:src="@drawable/gitx" />
+
+        <ImageView
+            android:id="@+id/link_id"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingRight="20dp"
+            android:src="@drawable/linkx" />
+
+        <ImageView
+            android:id="@+id/insta_id"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingRight="20dp"
+            android:src="@drawable/instax" />
+
+        <ImageView
+            android:id="@+id/fb_id"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/facebookx" />
+
+    </LinearLayout>
+
+</RelativeLayout>

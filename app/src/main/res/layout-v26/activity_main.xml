@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ED000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:contentDescription="TODO"
+            android:id="@+id/imageview"
+            android:layout_gravity="center"
+            android:src="@drawable/techvaganza"
+            />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tag"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textColor="#85E4B861"/>
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tech_year"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textColor="#85E4B861"/>
+
+    </LinearLayout>
+</RelativeLayout>

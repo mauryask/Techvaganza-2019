@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/backgroundcolor"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardPreventCornerOverlap="false"
+        android:elevation="15dp"
+        app:cardCornerRadius="6dp"
+        app:cardBackgroundColor="?attr/backgroundCard"
+        >
+
+        <RelativeLayout
+          
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/winner_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:textColor="?attr/textcolor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="3dp"/>
+            <View
+                android:layout_marginLeft="16dp"
+                android:id="@+id/views"
+                android:layout_marginTop="12dp"
+                android:layout_width="90dp"
+                android:layout_height="2dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/winner_event"
+                android:background="#f00000"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/views"
+                android:id="@+id/winner_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textcolor"
+                android:textSize="19sp"
+                />
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/winner_name"
+                android:textColor="?attr/textcolor"
+                android:id="@+id/winner_year_sem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="30dp"
+    android:gravity="center"
+    android:background="?attr/backgroundcolor"
+    >
+    <include layout="@layout/activity_timer"
+        android:id="@+id/my_timer"/>
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/my_timer"
+        android:layout_width="230dp"
+        android:layout_height="5dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view1"
+        android:background="#f00000"/>
+
+    <ImageView
+        android:layout_below="@id/view1"
+        android:id="@+id/image_View"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/text"
+        android:textColor="?attr/textcolor"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_below="@id/image_View"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/about_festx"
+
+/>
+
+    <Button
+        android:id="@+id/register"
+    android:layout_below="@id/text"
+    android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+    android:layout_height="43dp"
+    android:layout_centerHorizontal="true"
+    android:textColor="#ffffff"
+    android:textSize="15sp"
+    android:background="@drawable/button_shape"
+    android:text="@string/click_register"
+    tools:ignore="UnknownId" />
+
+    <LinearLayout
+        android:id="@+id/contact_us"
+        android:gravity="center"
+        android:layout_below="@id/register"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/purple"
+        android:layout_height="265dp">
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="3dp"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:text="Contact Us"/>
+        <View
+            android:layout_marginTop="9dp"
+            android:layout_width="250dp"
+            android:layout_height="4dp"
+            android:layout_centerHorizontal="true"
+            android:background="#f00000"/>
+
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="1dp"
+            android:textAlignment="center"
+            android:text="Email"/>
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:text="techfestnit@gmail.com"/>
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contacts"/>
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+91-7889434056"/>
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+          android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+91-9086395325"/>
+        <TextView
+            android:fontFamily="sans-serif"
+            android:id="@+id/lastcontact"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:layout_marginBottom="7dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+91-7006932710"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+          >
+
+            <ImageView
+                android:id="@+id/fb_id"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:clickable="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/facebookx"
+                android:onClick="facebook"
+                android:focusable="true"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:id="@+id/tweet_id"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:clickable="true"
+                android:onClick="tweeter"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/twitterx"
+                android:focusable="true"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:id="@+id/insta_id"
+                android:layout_width="62.7dp"
+                android:layout_height="62.7dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="instagram"
+                android:src="@drawable/instax" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/contact_us"
+            android:id="@+id/linear_layout"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/copy_right"
+                android:src="@drawable/copyright1"
+                android:contentDescription="TODO" />
+            <TextView
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/company_name"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:text="2019 | Techvaganza'19"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/linear_layout"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developer : Shubham Maurya"
+            android:textSize="16sp"/>
+</RelativeLayout>
+
+
+
+

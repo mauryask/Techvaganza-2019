@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+<declare-styleable name="ds">
+    <attr name="backgroundcolor" format="color"/>
+    <attr name="backgroundCard" format="color"/>
+    <attr name="textcolor" format="color"/>
+    <attr name="tintcolor" format="color"/>
+    <attr name="buttoncolor" format="color"/>
+    <attr name="colorPrimary" format="color"/>
+    <attr name="colorPrimaryDark" format="color"/>
+    <attr name="textColorSecondary" format="color"/>
+<attr name="cardRadius" format="dimension"/>
+</declare-styleable>
+</resources>

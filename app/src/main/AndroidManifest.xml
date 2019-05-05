@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pnstech.finalactivity">
+    <!-- code for providing internet permissio -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/techvaganza"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WorkshopDetail"
+            android:label="Workshops"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pnstech.finalactivity.HomeActivity" />
+        </activity>
+
+        <!--Activity-->
+
+        <activity
+            android:name=".DarkMode"
+            android:label="Settings"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".WinnerDetail"
+            android:label="Winners"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pnstech.finalactivity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".SendNotification"
+            android:label="Send Notification"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity> <!-- Activity -->
+        <activity
+            android:name=".PopupNotification"
+            android:theme="@style/AppTheme.PopUp"
+            /> <!-- Activity -->
+        <activity
+            android:name=".RatingActivity"
+            android:label="@string/rate_us"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pnstech.finalactivity.HomeActivity" />
+        </activity> <!-- Activity -->
+        <activity
+            android:name=".EventDetail"
+            android:label="@string/events_title"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pnstech.finalactivity.HomeActivity" />
+        </activity> <!-- Activity -->
+        <activity
+            android:name=".OrganizerDetail"
+            android:label="@string/organizer_title"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pnstech.finalactivity.HomeActivity" />
+        </activity> <!-- Activity -->
+        <activity android:name=".HomeActivity" /> <!-- Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/HideAppBar"
+            android:windowSoftInputMode="adjustPan" /> <!-- Activity -->
+        <activity android:name=".AboutApp" /> <!-- Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/HideAppBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".NotificationReceiver" />
+    </application>
+
+</manifest>

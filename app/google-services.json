@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "106198520678",
+    "firebase_url": "https://techvaganza-1eb46.firebaseio.com",
+    "project_id": "techvaganza-1eb46",
+    "storage_bucket": "techvaganza-1eb46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106198520678:android:a1afc9da8701a03e",
+        "android_client_info": {
+          "package_name": "com.pnstech.finalactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106198520678-ks97atii2si5e0tk88aq2cp64ifhd7rs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pnstech.finalactivity",
+            "certificate_hash": "834cba6827df4a111d9ff8fea3f60bae0b063f95"
+          }
+        },
+        {
+          "client_id": "106198520678-8fh2l7r6uiud3lergmtdbfv1l1idailk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSPVHarYVzzgWrm98yTVFpNRWI9Sc6ms8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106198520678-8fh2l7r6uiud3lergmtdbfv1l1idailk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

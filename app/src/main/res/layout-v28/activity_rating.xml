@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+   android:background="?attr/backgroundcolor"
+    tools:context="RatingActivity">
+
+    <LinearLayout
+        android:background="?attr/backgroundcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+<TextView
+   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="How Much You Liked Our App?"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+    android:textColor="?attr/textcolor"
+    android:textSize="20sp"/>
+
+        <RatingBar
+            android:layout_marginTop="40dp"
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:theme="@style/RatingBar"/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:id="@+id/rating_value"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textColor="?attr/textcolor"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:id="@+id/button"
+            android:layout_width="210dp"
+            android:background="@drawable/rating_button_color_and_shape"
+            android:layout_height="43dp"
+            android:textColor="#ffffff"
+            android:text="Rate Us" />
+    </LinearLayout>
+</RelativeLayout>

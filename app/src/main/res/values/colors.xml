@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#44146F</color>
+    <color name="colorPrimaryDark">#330f53</color>
+    <color name="colorAccent">#D61858</color>
+    <color name="actionMenuTextColor">#531B1B</color>
+    <color name="editTextBg">#E0D6D6</color>
+    <color name="colorControlActivated">#FF9800</color>
+    <color name="textColorSecondary">#FF9800</color>
+    <color name="colorControlHighlight">#0FC3C4BA</color>
+    <color name="normalColor">#88FF9800</color>
+    <color name="activationColor">#FF9800</color>
+</resources>

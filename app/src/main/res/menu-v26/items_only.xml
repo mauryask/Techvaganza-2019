@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/topItems"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item_login"
+            android:orderInCategory="100"
+            android:title="Admin"
+            android:checkable="true"
+            android:icon="@drawable/userx"/>
+
+        <item
+            android:id="@+id/item_organizers"
+            android:orderInCategory="100"
+            android:title="Our Team"
+            android:checkable="true"
+            android:icon="@drawable/oraganizer"
+            />
+
+        <item
+        android:id="@+id/item_event"
+        android:orderInCategory="100"
+        android:title="Events"
+        android:checkable="true"
+        android:icon="@drawable/events"
+         />
+
+        <item
+            android:id="@+id/item_works"
+            android:orderInCategory="100"
+            android:title="Workshops"
+            android:checkable="true"
+            android:icon="@drawable/workshop"/>
+
+
+    <item
+        android:id="@+id/item_register"
+        android:orderInCategory="100"
+        android:title="Register"
+        android:checkable="true"
+        android:icon="@drawable/register"/>
+
+        <item
+            android:id="@+id/item_winner"
+            android:orderInCategory="100"
+            android:title="Winners"
+            android:checkable="true"
+            android:icon="@drawable/winner"/>
+
+        <item
+            android:id="@+id/item_notify"
+            android:orderInCategory="100"
+            android:title="Send Notification"
+            android:checkable="true"
+            android:icon="@drawable/notifyx"/>
+
+        <item
+            android:id="@+id/item_logout"
+            android:orderInCategory="100"
+            android:title="Logout"
+            android:checkable="true"
+            android:icon="@drawable/logout"/>
+    </group>
+
+    <group android:id="@+id/bottomItems"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/item_setting"
+            android:orderInCategory="100"
+            android:title="Settings"
+            android:checkable="true"
+            android:icon="@drawable/setting"/>
+
+        <item
+            android:id="@+id/item_share"
+            android:orderInCategory="100"
+            android:title="Share App"
+            android:checkable="true"
+            android:icon="@drawable/share"/>
+
+
+        <item
+        android:id="@+id/item_rate"
+        android:orderInCategory="100"
+        android:title="Rate Us"
+        android:checkable="true"
+        android:icon="@drawable/rating"/>
+
+    </group>
+
+</menu>
