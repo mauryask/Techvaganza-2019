@@ -172,7 +172,7 @@ public class HomeActivity extends DarkMode implements  NavigationView.OnNavigati
 
     private void setUpToolbarMenu() {
         mtoolbar = findViewById(R.id.toolbarx);
-        mtoolbar.setTitle("Techvaganza'19");
+        mtoolbar.setTitle("Techvaganza");
     }
 
     private void setUpNavigationDrawerMenu() {

@@ -34,13 +34,13 @@
         android:textColor="?attr/textcolor"
         android:layout_marginTop="16dp"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:layout_below="@id/image_View"
         android:layout_width="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed-light"
+        android:fontFamily="sans-serif"
         android:text="@string/about_festx"
 
 />
@@ -68,7 +68,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:background="@drawable/purple"
-        android:layout_height="265dp">
+        android:layout_height="270dp">
 
         <TextView
             android:fontFamily="sans-serif"
@@ -148,13 +148,13 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="12dp"
           >
 
             <ImageView
                 android:id="@+id/fb_id"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:clickable="true"
                 android:layout_marginEnd="15dp"
                 android:src="@drawable/facebookx"
@@ -164,8 +164,8 @@
 
             <ImageView
                 android:id="@+id/tweet_id"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:clickable="true"
                 android:onClick="tweeter"
                 android:layout_marginEnd="8dp"
@@ -175,8 +175,8 @@
 
             <ImageView
                 android:id="@+id/insta_id"
-                android:layout_width="62.7dp"
-                android:layout_height="62.7dp"
+                android:layout_width="65.7dp"
+                android:layout_height="65.7dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="instagram"
@@ -185,43 +185,7 @@
 
     </LinearLayout>
 
-        <LinearLayout
-            android:background="@color/colorPrimary"
-            android:layout_below="@id/contact_us"
-            android:id="@+id/linear_layout"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <ImageView
-                android:paddingTop="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/copy_right"
-                android:src="@drawable/copyright1"
-                android:contentDescription="TODO" />
-            <TextView
-                android:paddingTop="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/company_name"
-                android:textSize="18sp"
-                android:textColor="#ffffff"
-                android:text="2019 | Techvaganza'19"/>
-
-        </LinearLayout>
-
-        <TextView
-            android:background="@color/colorPrimary"
-            android:layout_below="@id/linear_layout"
-            android:textColor="#ffffff"
-            android:textAlignment="center"
-            android:paddingBottom="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Developer : Shubham Maurya"
-            android:textSize="16sp"/>
 </RelativeLayout>
 
 
