@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
 
-        progressDialog = new ProgressDialog(this);
+       progressDialog = new ProgressDialog(this);
 
         final FirebaseUser user = auth.getCurrentUser(); //if user is already signed in
 
@@ -107,7 +107,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     Toast.makeText(getApplicationContext(), "Login failed! " + e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
                     counter--;
-                    progressDialog.dismiss();
+                  progressDialog.dismiss();
 
                     if (counter == 0) {
                         Toast.makeText(getApplicationContext(), "Please click on forgot password", Toast.LENGTH_SHORT).show();
@@ -143,6 +143,5 @@ public class LoginActivity extends AppCompatActivity {
         }
 
     }
-
 
 }

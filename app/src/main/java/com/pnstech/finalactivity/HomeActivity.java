@@ -316,7 +316,7 @@ public class HomeActivity extends DarkMode implements  NavigationView.OnNavigati
                     SimpleDateFormat dateFormat = new SimpleDateFormat(
                             "yyyy-MM-dd");
                     // Please here set your event date//YYYY-MM-DD
-                    Date futureDate = dateFormat.parse("2019-5-4");
+                    Date futureDate = dateFormat.parse("2020-5-4");
                     Date currentDate = new Date();
                     if (!currentDate.after(futureDate)) {
                         long diff = futureDate.getTime()
