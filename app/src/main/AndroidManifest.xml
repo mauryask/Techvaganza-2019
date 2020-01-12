@@ -84,7 +84,7 @@
         <activity android:name=".AboutApp" /> <!-- Activity -->
         <activity
             android:name=".MainActivity"
-            android:theme="@style/HideAppBar">
+            >
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
                 <action android:name="android.intent.action.MAIN" />

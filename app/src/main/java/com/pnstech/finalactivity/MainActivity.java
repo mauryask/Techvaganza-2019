@@ -6,6 +6,8 @@ import android.graphics.Typeface;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -23,6 +25,14 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //enable full screen mode
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE); // hides title
+        getSupportActionBar().hide(); // hides title bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);// enables full screen
+
         setContentView(R.layout.activity_main);
 
         tv1= findViewById(R.id.tag);
@@ -51,7 +61,6 @@ public class MainActivity extends AppCompatActivity
                 finish();
             }
         },SPLASH_TIME_OUT);
-
 
     }
 }
