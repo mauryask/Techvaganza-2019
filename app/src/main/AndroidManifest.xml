@@ -15,9 +15,7 @@
         <activity android:name=".WorkshopDetail"
             android:label="Workshops"
             android:parentActivityName=".HomeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.pnstech.finalactivity.HomeActivity" />
+
         </activity>
 
         <!--Activity-->
@@ -26,26 +24,20 @@
             android:name=".DarkMode"
             android:label="Settings"
             android:parentActivityName=".HomeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
+
         </activity>
 
         <activity
             android:name=".WinnerDetail"
             android:label="Winners"
             android:parentActivityName=".HomeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.pnstech.finalactivity.HomeActivity" />
+
         </activity>
         <activity
             android:name=".SendNotification"
             android:label="Send Notification"
             android:parentActivityName=".HomeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
+
         </activity> <!-- Activity -->
         <activity
             android:name=".PopupNotification"
@@ -55,26 +47,20 @@
             android:name=".RatingActivity"
             android:label="@string/rate_us"
             android:parentActivityName=".HomeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.pnstech.finalactivity.HomeActivity" />
+
         </activity> <!-- Activity -->
         <activity
             android:name=".EventDetail"
             android:label="@string/events_title"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.pnstech.finalactivity.HomeActivity" />
+
         </activity> <!-- Activity -->
         <activity
             android:name=".OrganizerDetail"
             android:label="@string/organizer_title"
             android:parentActivityName=".HomeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.pnstech.finalactivity.HomeActivity" />
+
         </activity> <!-- Activity -->
         <activity android:name=".HomeActivity" /> <!-- Activity -->
         <activity
@@ -82,6 +68,7 @@
             android:theme="@style/HideAppBar"
             android:windowSoftInputMode="adjustPan" /> <!-- Activity -->
         <activity android:name=".AboutApp" /> <!-- Activity -->
+
         <activity
             android:name=".MainActivity"
             >
