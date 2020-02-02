@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
+
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginTop="24dp"
-    android:layout_marginLeft="15dp"
-    android:layout_marginRight="15dp"
-    android:layout_marginBottom="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
     app:cardPreventCornerOverlap="false"
     android:elevation="20dp"
-    app:cardCornerRadius="5dp"
     app:cardBackgroundColor="?attr/backgroundCard"
     >
-    <RelativeLayout
 
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
 
         <ImageView
+            android:src="@drawable/darkback"
             android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="392dp"
@@ -30,33 +36,29 @@
             />
 
         <TextView
+            android:text="Python"
             android:textColor="?attr/textcolor"
             android:layout_marginTop="9dp"
             android:layout_below="@id/workshop_profilePic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:textSize="19sp"
             android:clickable="false"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
             android:textStyle="bold"
             android:id="@+id/workshop_name"
-
             />
 
         <View
-            android:layout_marginLeft="16dp"
             android:id="@+id/viewq"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="5dp"
             android:layout_width="90dp"
             android:layout_height="2dp"
-            android:layout_marginBottom="8dp"
             android:layout_below="@id/workshop_name"
             android:background="#f00000"/>
 
 
         <TextView
+            android:visibility="gone"
             android:textColor="?attr/textcolor"
             android:layout_marginTop="2dp"
             android:layout_marginLeft="10dp"
@@ -71,7 +73,7 @@
             />
 
         <TextView
-
+            android:visibility="gone"
             android:layout_marginTop="2dp"
             android:layout_marginLeft="10dp"
             android:paddingLeft="5dp"
@@ -86,23 +88,19 @@
             />
 
 
-
         <TextView
-
-            android:layout_marginTop="2dp"
+            android:text="Python is the best language of the era i think  you should opt this..."
+            android:layout_marginTop="5dp"
             android:layout_below="@id/timing_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:clickable="false"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
             android:textSize="17sp"
             android:id="@+id/workshop_description"
             android:textColor="?attr/textcolor"
             />
 
         <Button
+            android:visibility="gone"
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"
             android:layout_below="@id/workshop_description"
@@ -115,6 +113,13 @@
             android:layout_marginBottom="18dp"
             android:text="Read More"/>
 
-
     </RelativeLayout>
 </android.support.v7.widget.CardView>
+    <View
+        android:layout_below="@id/card"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c8d6d6d6"
+        />
+
+</RelativeLayout>

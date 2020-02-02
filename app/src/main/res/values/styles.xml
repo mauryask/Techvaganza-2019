@@ -1,6 +1,6 @@
 <resources>
 
-    <!-- Base application theme. -->
+    <!--==================  Base application theme  =====================-->
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -11,22 +11,20 @@
         <item name="colorControlHighlight">@color/colorControlHighlight</item>
         <item name="actionMenuTextColor">@color/actionMenuTextColor</item>
 
-<!--New properties-->
 
-        <!--New properties-->
+        <!--================== New properties ================-->
         <item name="cardRadius">10dp</item>
         <item name="backgroundcolor">#ffffff</item>
         <item name="backgroundCard">#ffffff</item>
         <item name="textcolor">#000000</item>
         <item name="buttoncolor">#2196f3</item>
-
-
         <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
 
     </style>
 
-    <!--Code for full screen and hiding status and action bar-->
 
+
+    <!-- =============== theme full screen and hiding status and action bar ===============-->
     <style name="HideAppBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowNoTitle">true</item>
@@ -35,7 +33,7 @@
     </style>
 
 
-    <!--hiding app bar but not status bar-->
+    <!--========= hiding app bar but not status bar  ===============-->
     <style name="HideAppBarButNotStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowNoTitle">true</item>
@@ -43,7 +41,9 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <style name="RatingBar" parent="Theme.AppCompat">
+
+
+    <style name="RatingBar" parent="Base.Theme.AppCompat">
         <item name="colorControlNormal">@color/normalColor</item>
         <item name="colorControlActivated">@color/activationColor</item>
     </style>
@@ -54,15 +54,10 @@
         <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
 
-<!--removing shadow of appbar-->
- <!--
-    <style name="MyNoActionBarShadowTheme" parent="RateAppBAr">
-        <item name="android:windowContentOverlay">@null</item>
-    </style>-->
 
-    <!--Dark mode attributes colors-->
 
-    <style name="DarkMode" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!--============ Dark mode attributes colors ===================-->
+    <style name="DarkMode" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#212121</item>
         <item name="colorPrimaryDark">#000000</item>
@@ -81,10 +76,10 @@
     </style>
 
 
-
     <style name="windowAnimationTransition">
         <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
         <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
+
 
 </resources>
