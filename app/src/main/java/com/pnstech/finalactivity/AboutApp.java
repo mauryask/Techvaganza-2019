@@ -60,7 +60,7 @@ public class AboutApp extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/cyberatnit"));
-              startActivity(intent);
+                startActivity(intent);
             }
         });
     }
