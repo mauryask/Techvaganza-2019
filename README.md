@@ -1,3 +1,3 @@
 # Techvaganza-2019
-this is official android aplication developed for annual techno-cultural fest 'Techvaganza' of NIT Srinagar
+Official android aplication of 'Techvaganza-2019' the annual techno-cultural fest of NIT Srinagar
 
